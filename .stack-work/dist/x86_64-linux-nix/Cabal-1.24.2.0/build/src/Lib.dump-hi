@@ -1,0 +1,177 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-08 09:25:46.409187564 UTC
+
+interface ilososi-0.1.0.0-H8pDWkvh9nDHjF63Dt2jwj:Lib 8002
+  interface hash: fa392fd27986d137cac1156b0c77f78c
+  ABI hash: 1b4b0b6ecc11986a7b80afd8d68c3266
+  export-list hash: 753e73703c22399bc69625abae4c5691
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 5755d1c435420fb1a352fd2078d255ff
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.ilos
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+dab8d753f83c16c180f29d5e81361c86
+  $fShowIlo :: GHC.Show.Show Lib.Ilo
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Ilo
+                  Lib.$fShowIlo_$cshowsPrec
+                  Lib.$fShowIlo_$cshow
+                  Lib.$fShowIlo_$cshowList -}
+fe46ec83ae940be805ef4c90c4b30102
+  $fShowIlo1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I"#) -}
+23cfa55d6bf998d4bc7b3b99e730a474
+  $fShowIlo2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "II"#) -}
+14f94f00e9f30546d949098a94a37b2a
+  $fShowIlo3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "III"#) -}
+dab8d753f83c16c180f29d5e81361c86
+  $fShowIlo_$cshow :: Lib.Ilo -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Lib.Ilo) ->
+                 case x of wild {
+                   Lib.III -> Lib.$fShowIlo3
+                   Lib.II -> Lib.$fShowIlo2
+                   Lib.I -> Lib.$fShowIlo1 }) -}
+dab8d753f83c16c180f29d5e81361c86
+  $fShowIlo_$cshowList :: [Lib.Ilo] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__ @ Lib.Ilo Lib.$w$cshowsPrec) -}
+dab8d753f83c16c180f29d5e81361c86
+  $fShowIlo_$cshowsPrec :: GHC.Types.Int -> Lib.Ilo -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: Lib.Ilo) (w2 :: GHC.Base.String) ->
+                 Lib.$w$cshowsPrec w1 w2) -}
+105024020ee886e61508575d94894134
+  $tc'I :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16735179580357671119##
+                   11553397597973629779##
+                   Lib.$trModule
+                   Lib.$tc'I1) -}
+1657b235e91c9311dbca6a29e9f2d18d
+  $tc'I1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'I"#) -}
+5933f0ec943a6671c533fbd03d49f72f
+  $tc'II :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16499294096896079107##
+                   5016284339124102494##
+                   Lib.$trModule
+                   Lib.$tc'II1) -}
+115ed614cad2d8bf2d028fd8ed4a5214
+  $tc'II1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'II"#) -}
+08092bc72e0699a8097a3497ba769637
+  $tc'III :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12090520860547747891##
+                   14580641086478713815##
+                   Lib.$trModule
+                   Lib.$tc'III1) -}
+d07238ecf1ebe0c8209a7cfe34b22d41
+  $tc'III1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'III"#) -}
+9b163fe48e9e41ade947f193074cb36d
+  $tcIlo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14681973368972263112##
+                   4054755416061721964##
+                   Lib.$trModule
+                   Lib.$tcIlo1) -}
+da27ce012196632a829f00e40ed05438
+  $tcIlo1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Ilo"#) -}
+3aece38a239faa387055e7606e40410f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule2 Lib.$trModule1) -}
+88ac45f11351bdbbe04e8a7952890235
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib"#) -}
+8fcf0c9199a28ed5d0830603872eebbf
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "ilososi-0.1.0.0-H8pDWkvh9nDHjF63Dt2jwj"#) -}
+dab8d753f83c16c180f29d5e81361c86
+  $w$cshowsPrec :: Lib.Ilo -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Lib.Ilo) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Lib.III -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowIlo3 w1
+                   Lib.II -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowIlo2 w1
+                   Lib.I -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowIlo1 w1 }) -}
+3de2c731ac0986280cc3d44e4274f040
+  $wgo :: [GHC.Types.Float] -> GHC.Prim.Float# -> GHC.Prim.Float#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0] -}
+dab8d753f83c16c180f29d5e81361c86
+  data Ilo = III | II | I
+dfa29da98c05f00e0e7fb6fc4c8f1f56
+  ilos :: [GHC.Types.Float] -> Lib.Ilo
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (x :: [GHC.Types.Float]) ->
+                 case Lib.$wgo x 0.0# of ww { DEFAULT ->
+                 case GHC.List.$wlenAcc @ GHC.Types.Float x 0# of ww2 { DEFAULT ->
+                 case GHC.Prim.divideFloat#
+                        ww
+                        (GHC.Prim.int2Float# ww2) of ww1 { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.ltFloat# ww1 0.5#) of wild {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.ltFloat# ww1 0.75#) of wild1 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.leFloat# ww1 1.0#) of wild2 {
+                             GHC.Types.False -> Lib.ilos1 GHC.Types.True -> Lib.I }
+                        GHC.Types.True -> Lib.II }
+                   GHC.Types.True -> Lib.III } } } }) -}
+ff085c23e42a4084c4493d78d702cf19
+  ilos1 :: Lib.Ilo
+  {- Strictness: x -}
+instance [safe] GHC.Show.Show [Lib.Ilo] = Lib.$fShowIlo
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
